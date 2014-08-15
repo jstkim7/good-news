@@ -1,0 +1,24 @@
+.good-news {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 30px;
+  width: 100%;
+
+  background: red;
+
+  text-align: center;
+}
+
+#good-news-message {
+  display: inline-block;
+}
+
+#close-good-news-bar {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: 5px;
+}

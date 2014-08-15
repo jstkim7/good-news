@@ -1,0 +1,29 @@
+{
+  "name": "good-news",
+  "version": "0.0.0",
+  "description": "A simple widget to get more traffic",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jstkim7/good-news.git"
+  },
+  "keywords": [
+    "traffic",
+    "email",
+    "marketing",
+    "news",
+    "joke"
+  ],
+  "author": "Sung Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jstkim7/good-news/issues"
+  },
+  "homepage": "https://github.com/jstkim7/good-news",
+  "dependencies": {
+    "express": "4.8.4"
+  }
+}
