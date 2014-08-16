@@ -11,8 +11,6 @@
   function sayHello() {
     requestId = requestAnimationFrame(sayHello);
     goodNewsBar.style.top = y + "px";
-    //goodNewsBar.style.marginTop = "30px";
-    console.log(y + "px");
     if (y < 0) {
       y+=2;
     } else {
@@ -25,8 +23,6 @@
   function sayGoodbye() {
     requestId = requestAnimationFrame(sayGoodbye);
     goodNewsBar.style.top = y + "px";
-    //goodNewsBar.style.marginTop = "30px";
-    console.log(y + "px");
     if (y > -30) {
       y-=2;
     } else {
@@ -34,8 +30,6 @@
     }
   }
 
-  
-  console.log(closeButton);
   closeButton.onclick = function() {
     sayGoodbye();
   }
