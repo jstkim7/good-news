@@ -1,13 +1,17 @@
 (function() {
+  //necessary evil
   var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
   var cancelRAF = window.cancelAnimationFrame || window.mozCancelAnimationFrame || window.webkitCancelAnimationFrame || window.msCancelAnimationFrame;
 
+  // Grab the interactive DOMs
   var goodNewsBar = document.getElementById("good-news");
   var closeButton = document.getElementById("close-good-news-bar");
 
+  // Initialization
   var y = -30;
   var requestId;
 
+  // Opens the bar
   function sayHello() {
     requestId = requestAnimationFrame(sayHello);
     goodNewsBar.style.top = y + "px";
@@ -18,8 +22,11 @@
     }
   }
 
+  // Open the bar
   sayHello();
 
+
+  // Closes the bar
   function sayGoodbye() {
     requestId = requestAnimationFrame(sayGoodbye);
     goodNewsBar.style.top = y + "px";
@@ -30,6 +37,7 @@
     }
   }
 
+  // Close the bar on click
   closeButton.onclick = function() {
     sayGoodbye();
   }
